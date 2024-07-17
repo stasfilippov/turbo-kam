@@ -1,3 +1,5 @@
+@tailwind utilities;
+
 .textWrapper {
   @apply relative cursor-pointer text-[#828181] transition-all duration-300;
 
