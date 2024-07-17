@@ -6,14 +6,15 @@ import logo from '@/public/logo-example.png'
 
 import { NAV_LINKS } from '@/constants'
 import Link from 'next/link'
+import { cn } from '@/lib/utils'
 
 export const Footer = () => {
 	return (
 		<footer className='bg-black-10 rounded-t-5xl -mt-[35px] py-[60px] '>
 			<div className='max-container pb-10 '>
 				<div className={s.textWrapper}>
-					<span className={s.footerDescr}>Есть вопросы?</span>
-					<h2 className={s.footerHeader}>Оставьте заявку и мы свяжемся</h2>
+					<span className={cn(`${s.footerDescr} medium-70`)}>Есть вопросы?</span>
+					<h2 className={cn(`${s.footerHeader} medium-64`)}>Оставьте заявку и мы свяжемся</h2>
 					<ArrowUpRight className={s.footerArrow} size={200}/>
 				</div>
 			</div>
@@ -38,9 +39,9 @@ export const Footer = () => {
 					</div>
 				</div>
 				<div className='flex flex-col items-end justify-between'>
-					<Link href={'/'} className={s.linkGoHome}>
+					<Link href={'/'} className={cn(`${s.linkGoHome} medium-20 flexCenter`)}>
 						<span>Наверх</span>
-						<div className={s.iconWrapper}>
+						<div className={cn(`${s.iconWrapper} flexCenter`)}>
 							<ArrowUp />
 						</div>
 					</Link>

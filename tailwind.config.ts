@@ -1,5 +1,7 @@
 import type { Config } from "tailwindcss"
 
+import plugin from 'tailwindcss/plugin'
+
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 const config = {
@@ -34,21 +36,22 @@ const config = {
           10: '#ffffff'
         }
       },
-
-      // backgroundImage: {
-      //   'hero': "url('/public/hero.png')",
-      // },
-      // screens: {
-      //   xs: '400px',
-      //   '3xl': '1680px',
-      //   '4xl': '2200px',
-      // },
       borderRadius: {
         '5xl': '40px',
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  // plugins: [
+  //   require("tailwindcss-animate"),
+  //   plugin(function({ addUtilities }) {
+  //     addUtilities({
+  //       '.regular-11': {
+  //         'font-family': '11px',
+  //         'font-weight': '300'
+  //     }
+  //     })
+  //   }),
+  // ],
 } satisfies Config
 
 export default config
