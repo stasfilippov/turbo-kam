@@ -1,8 +1,8 @@
 import { STEPS_OF_PROCESS } from '@/constants'
-import { CardStepOfProcess } from '../ui/card/cardStepOfProcess'
 import Image from 'next/image'
 import photo_submit from '@/public/turbine1.jpeg'
-import { SuperButton } from '../ui/button/button'
+import { CardStepOfProcess } from '../../ui/card/cardStepOfProcess'
+import { SuperButton } from '../../ui/button/button'
 
 export const WorkProcess = () => {
 	return (
@@ -18,7 +18,7 @@ export const WorkProcess = () => {
 					<div className='relative w-full h-[144px]'>
 						<Image className='rounded-3xl object-cover overflow-hidden' src={photo_submit} alt='photo_submit' fill={true} />
 					</div>
-					<SuperButton className='w-[280px] h-[64px] medium-16 rounded-2xl' >Оставить заявку</SuperButton>
+					<SuperButton className='text-white-10 w-[280px] h-[64px] medium-16 rounded-2xl' >Оставить заявку</SuperButton>
 				</div>
 			</div>
 		</section>

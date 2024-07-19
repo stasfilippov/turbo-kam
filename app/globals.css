@@ -109,6 +109,11 @@
         text-transform: uppercase;
     }
 
+    .bold-16 {
+        font-size: 16px;
+        font-weight: 800;
+    }
+
     .bold-20 {
         font-size: 20px;
         font-weight: 800;

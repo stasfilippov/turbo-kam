@@ -18,7 +18,6 @@ import {StaticImageData} from 'next/image';
 
 // NAVIGATION
 export const NAV_LINKS = [
-  { href: '/', key: 'advantages', label: 'Преимущества' },
   { href: '/', key: 'catalog', label: 'Каталог' },
   { href: '/', key: 'services', label: 'Услуги' },
   { href: 'about', key: 'about', label: 'O нас' },

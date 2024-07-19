@@ -1,10 +1,10 @@
-import {Header} from '@/app/components/Header/header';
-import { Hero } from './components/Hero/hero'
-import {Advantages} from '@/app/components/Advantages/advantages';
-import {Services} from '@/app/components/Services/services';
-import {ContactUs} from '@/app/components/ContactUs/contactUs';
-import { WorkProcess } from './components/WorkProcess/workProcess'
-import { Footer } from './components/Footer/footer'
+import { Advantages } from './components/sections/Advantages/advantages'
+import { ContactUs } from './components/sections/ContactUs/contactUs'
+import { Footer } from './components/sections/Footer/footer'
+import { Hero } from './components/sections/Hero/hero'
+import { Services } from './components/sections/Services/services'
+import { WorkProcess } from './components/sections/WorkProcess/workProcess'
+
 
 export default function Home() {
   return (
