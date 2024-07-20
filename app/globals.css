@@ -53,6 +53,11 @@
         font-weight: 300;
     }
 
+    .regular-14 {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
     .regular-12 {
         font-size: 12px;
         font-weight: 300;
@@ -107,6 +112,16 @@
         font-size: 9px;
         font-weight: 500;
         text-transform: uppercase;
+    }
+
+    .bold-12 {
+        font-size: 12px;
+        font-weight: 800;
+    }
+
+    .bold-14 {
+        font-size: 14px;
+        font-weight: 800;
     }
 
     .bold-16 {

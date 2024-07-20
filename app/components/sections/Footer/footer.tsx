@@ -2,7 +2,7 @@ import { Separator } from '@/components/ui/separator'
 import { ArrowUp, ArrowUpRight } from 'lucide-react'
 import s from './footer.module.scss'
 import Image from 'next/image'
-import logo from '@/public/logo-example.png'
+import logo from '@/public/logo.png'
 
 import { NAV_LINKS } from '@/constants'
 import Link from 'next/link'
@@ -53,7 +53,13 @@ export const Footer = () => {
 			</div>
 			<Separator className='my-6 bg-white-10/20'/>
 			<div className='max-container flexBetween'>
-					<Image src={logo} width={50} height={50} alt='logo' />
+					<Link href={'/'} className='flexCenter'>
+						<Image src={logo} width={80} height={80} alt='logo' />
+						<div className='flex flex-col text-white-10 drop-shadow-md'>
+							<span className='bold-20 italic uppercase'><span className='text-pink-primary'>Турбо Кам</span> Сервис</span>
+							<span className='medium-12'>Ремонт и продажа турбин</span>
+						</div>
+					</Link>
 					<div className='flex flex-col regular-11 text-white-10/40'>
 						<Link href={'/'} className='transition-all duration-300 hover:text-white-10 hover:underline'>Политика обработки перс. данных</Link>
 						<Link href={'/'} className='transition-all duration-300 hover:text-white-10 hover:underline'>Соглашение о конфиденциальности</Link>

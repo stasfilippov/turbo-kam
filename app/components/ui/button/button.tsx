@@ -21,5 +21,5 @@ export const SuperButton = ({children, href = '/', variant, className} : Props) 
 				}
 			}
 
-		return <Button className={cn('bg-pink-primary transition-all hover:bg-pink-hover medium-16', className)}>{children}</Button>
+		return <Button className={cn('flexCenter bg-pink-primary transition-all hover:bg-pink-hover medium-16 ', className)}>{children}</Button>
 }
