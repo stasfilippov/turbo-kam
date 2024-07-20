@@ -6,6 +6,7 @@ import { NAV_LINKS } from '@/constants'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import {SuperButton} from '@/app/components/ui/button/button';
+import { Modal } from '../../ui/modal/modal'
 
 export const Header = () => {
 	return (
@@ -38,8 +39,8 @@ export const Header = () => {
 						+79372964868
 					</SuperButton>
 				</div>
-				
-				<SuperButton>Оставить заявку</SuperButton>
+				<Modal/>
+				{/* <SuperButton>Оставить заявку</SuperButton> */}
 			</div>
 		</header>
 	);
