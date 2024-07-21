@@ -3,7 +3,9 @@ import React from 'react';
 import logo from '@/public/logo.png'
 import { NAV_LINKS } from '@/constants'
 import Link from 'next/link'
-import {SuperButton} from '@/app/components/ui/button/button';
+import { Phone } from 'lucide-react'
+import { Modal } from '../../ui/modal/modal'
+import { SuperButton } from '../../ui/button/button'
 
 export const Header = () => {
 	return (
@@ -27,16 +29,19 @@ export const Header = () => {
 				<p className='regular-14 text-primary-white'>Республика Татарстан, <br/> г. Набережные Челны</p>
 			</div>
 			<div className='flexCenter gap-6' >
-				<div className='flexCenter gap-4'>
+				<div className='flex flex-col gap-1'>
+					<Link href={'tel:+79372964868'} className='flexCenter gap-2 transition-all duration-300 hover:text-primary-pink'>
+						<Phone size={18}/>
+						<span className='bold-16 transition-all duration-300 hover:underline '>+79372964868</span>
+					</Link>
 					<p className='medium-12 text-primary-white text-center'>
 						<span className='bold-12'>Пн-Пт</span> — С 8:00 до 17:00 <br/>
 						<span className='bold-12'>Сб-Вс</span> — Выходной
 					</p>
-					<SuperButton variant={'link'} href={'tel:+79372964868'}>
-						+79372964868
-					</SuperButton>
 				</div>
-				{/* <SuperButton>Оставить заявку</SuperButton> */}
+				<Modal>
+					<SuperButton>Оставить заявку</SuperButton>
+				</Modal>
 			</div>
 		</header>
 	);

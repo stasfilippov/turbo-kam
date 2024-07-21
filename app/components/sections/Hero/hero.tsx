@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import hero from '@/public/hero.png'
 import {SuperButton} from '@/app/components/ui/button/button';
+import { Modal } from '../../ui/modal/modal'
 
 
 export const Hero = () => {
@@ -12,7 +13,9 @@ export const Hero = () => {
 					Профессиональный и качественный ремонт турбин в заводских условиях
 				</p>
 				<div className='flex items-center gap-4'>
-					<SuperButton>Записаться на диагностику</SuperButton>
+					<Modal>
+						<SuperButton>Записаться на диагностику</SuperButton>
+					</Modal>
 					<SuperButton variant={'link'}>Посмотреть каталог</SuperButton>
 					
 				</div>

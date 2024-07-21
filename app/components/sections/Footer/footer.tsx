@@ -3,21 +3,24 @@ import { ArrowUp, ArrowUpRight } from 'lucide-react'
 import s from './footer.module.scss'
 import Image from 'next/image'
 import logo from '@/public/logo.png'
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog'
+
 
 import { NAV_LINKS } from '@/constants'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
+import { Modal } from '../../ui/modal/modal'
 
 export const Footer = () => {
 	return (
 		<footer className='bg-primary-black rounded-t-5xl -mt-[35px] py-[60px] '>
 			<div className='max-container pb-10 '>
-				<div className={s.textWrapper}>
-					<span className={cn(s.footerDescr, 'medium-70')}>Есть вопросы?</span>
-					<h2 className={cn(s.footerHeader, 'medium-64')}>Оставьте заявку и мы свяжемся</h2>
-					<ArrowUpRight className={s.footerArrow} size={200}/>
-				</div>
+				<Modal className='block w-full text-start'>
+					<div className={s.textWrapper}>
+						<span className={cn(s.footerDescr, 'medium-70')}>Есть вопросы?</span>
+						<h2 className={cn(s.footerHeader, 'medium-64')}>Оставьте заявку и мы свяжемся</h2>
+						<ArrowUpRight className={s.footerArrow} size={200}/>
+					</div>
+				</Modal>
 			</div>
 			<Separator className='my-6 bg-primary-white/20'/>
 			<div className='max-container flex justify-between'> 
@@ -31,18 +34,7 @@ export const Footer = () => {
 					<div className='mb-5'>
 						<div className='mb-4 medium-9 text-primary-white/40'>Офис</div>
 						<p className='regular-16 text-primary-white'>423800, Республика Татарстан, <br/> г. Набережные Челны</p>
-						<Dialog>
-						<DialogTrigger>Open</DialogTrigger>
-						<DialogContent>
-							<DialogHeader>
-								<DialogTitle>Are you absolutely sure?</DialogTitle>
-								<DialogDescription>
-									This action cannot be undone. This will permanently delete your account
-									and remove your data from our servers.
-								</DialogDescription>
-							</DialogHeader>
-						</DialogContent>
-					</Dialog>
+						
 					</div>
 					<div>
 						<div className='mb-4 medium-9 text-primary-white/40'>График работы</div>

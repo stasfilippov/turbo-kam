@@ -3,6 +3,7 @@ import Image from 'next/image'
 import photo_submit from '@/public/turbine1.jpeg'
 import { CardStepOfProcess } from '../../ui/card/cardStepOfProcess'
 import { SuperButton } from '../../ui/button/button'
+import { Modal } from '../../ui/modal/modal'
 
 export const WorkProcess = () => {
 	return (
@@ -18,7 +19,9 @@ export const WorkProcess = () => {
 					<div className='relative w-full h-[144px]'>
 						<Image className='rounded-3xl object-cover overflow-hidden' src={photo_submit} alt='photo_submit' fill={true} />
 					</div>
-					<SuperButton className='text-primary-white w-[280px] h-[64px] medium-16 rounded-2xl' >Оставить заявку</SuperButton>
+					<Modal>
+						<SuperButton className='text-primary-white w-[280px] h-[64px] medium-16 rounded-2xl'>Оставить заявку</SuperButton>
+					</Modal>
 				</div>
 			</div>
 		</section>
