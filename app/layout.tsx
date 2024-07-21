@@ -1,14 +1,10 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
-import "./globals.css";
+import "../styles/globals.css";
 import { Header } from './components/sections/Header/header'
+import { cn } from '@/lib/utils'
 
-const manrope = Manrope({ 
-  subsets: [ 'cyrillic'],
-  weight: ['300', '500', '800'], 
-  display: 'swap', 
-  variable: '--font-manrope' 
-});
+const manrope = Manrope({ subsets: ['cyrillic'],weight: ['300', '400', '500', '800'], variable: "--font-sans" });
 
 export const metadata: Metadata = {
   title: 'Турбо Кам Сервис',
@@ -22,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${manrope.variable}, font-sans bg-black-10`}>
+      <body className={cn('bg-primary-black font-sans antialiased', manrope.variable)}>
         <Header />
         {children}
       </body>

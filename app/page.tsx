@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <main>
         <Hero/>
-        <div className='bg-gray-10 rounded-5xl '>
+        <div className='bg-silver-10 rounded-5xl '>
           <Advantages/>
           <Services/>
         </div>

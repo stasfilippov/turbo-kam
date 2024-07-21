@@ -2,20 +2,20 @@
   @apply relative cursor-pointer text-[#828181] transition-all duration-300;
 
   &:hover {
-    @apply text-white-10;
+    @apply text-primary-white;
 
     .footerDescr {
-      @apply text-white-10;
+      @apply text-primary-white;
     }
   }
 }
 
 .footerDescr {
-  @apply text-white-10/40 transition-all duration-300;
+  @apply text-primary-white/40 transition-all duration-300;
 }
 
 .footerHeader {
-  @apply text-white-10 transition-all;
+  @apply text-primary-white transition-all;
 }
 
 .footerArrow {
@@ -23,17 +23,17 @@
 }
 
 .iconWrapper {
-  @apply bg-white-10 rounded-full w-[70px] h-[70px]  text-black-10;
+  @apply bg-primary-white rounded-full w-[70px] h-[70px]  text-primary-black;
 }
 
 .linkGoHome {
-  @apply gap-6  text-white-10;
+  @apply gap-6  text-primary-white;
 
   &:hover {
-    @apply text-white-10/40 transition-all duration-300;
+    @apply text-primary-white/40 transition-all duration-300;
 
     .iconWrapper {
-      @apply bg-white-10/40 text-white-10 transition-all duration-300;
+      @apply bg-primary-white/40 text-primary-white transition-all duration-300;
     }
   }
 }
