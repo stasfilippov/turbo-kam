@@ -13,12 +13,12 @@ export default function About () {
 		<>
 		<section>
 			<div className='max-container mt-20'>
-				<h1 className='text-white-10 medium-48 mb-7' >
-					<span className='text-pink-primary'>Турбо Кам Сервис -</span> 
+				<h1 className='text-primary-white medium-48 mb-7' >
+					<span className='text-primary-pink'>Турбо Кам Сервис -</span> 
 					О компании
 				</h1>
 			</div>
-			<div className='bg-gray-10 rounded-t-5xl p-10' >
+			<div className='bg-silver-10 rounded-t-5xl p-10' >
 				<div className='max-container' >
 					<ResizablePanelGroup direction="horizontal" className='gap-4'>
 						<ResizablePanel defaultSize={25}>
@@ -26,7 +26,7 @@ export default function About () {
 						</ResizablePanel>
 						<ResizablePanel defaultSize={75}>
 							<h3 className='medium-24 mb-7'>Приветствую Вас, коллеги, друзья!</h3>
-							<p className='medium-16 mb-3'>Я, <span className='bold-16'>Марат Сабирзянович,</span>  руководитель компании <span className='bold-20 text-pink-primary'>&quot;Турбо Кам Сервис&quot;</span>. Наш центр по ремонту турбин не отстает от современного темпа развития. Мы стремимся к улучшению качества предоставляемых услуг.</p>
+							<p className='medium-16 mb-3'>Я, <span className='bold-16'>Марат Сабирзянович,</span>  руководитель компании <span className='bold-20 text-primary-pink'>&quot;Турбо Кам Сервис&quot;</span>. Наш центр по ремонту турбин не отстает от современного темпа развития. Мы стремимся к улучшению качества предоставляемых услуг.</p>
 							<p className='mb-3'>Если у Вас возникнут спорные вопросы, замечания или предложения, или есть претензии по работе персонала производственно-технического центра &quot;Турбо Кам Сервис&quot;, мы решим Ваш вопрос за 1 час.</p>
 							<p>Звоните по телефону +79372964868.</p>
 						</ResizablePanel>
@@ -35,7 +35,7 @@ export default function About () {
 				<Separator className='bg-gray-400 my-10'/>
 				<div className='max-container'>
 					<p className='medium-16 text-center'>
-						<span className='medium-20'>Компания</span> <span className='bold-20 text-pink-primary'>&quot;Турбо Кам Сервис&quot;</span> была основана в 2012 году в качестве производственно-технического предприятия, специализирующегося на ремонте, продаже и диагностике турбин (турбокомпрессоров) и систем турбонаддува для различных типов двигателей внутреннего сгорания. В настоящее время мы занимаем лидирующие позиции в данной отрасли на российском рынке.
+						<span className='medium-20'>Компания</span> <span className='bold-20 text-primary-pink'>&quot;Турбо Кам Сервис&quot;</span> была основана в 2012 году в качестве производственно-технического предприятия, специализирующегося на ремонте, продаже и диагностике турбин (турбокомпрессоров) и систем турбонаддува для различных типов двигателей внутреннего сгорания. В настоящее время мы занимаем лидирующие позиции в данной отрасли на российском рынке.
 					</p>
 					<div className='p-10' >
 						<Carousel
