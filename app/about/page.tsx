@@ -48,6 +48,7 @@ export default function About() {
               </ResizablePanel>
             </ResizablePanelGroup>
           </div>
+
           <Separator className={'my-10 bg-gray-400'} />
           <div className={'max-container'}>
             <p className={'text-center medium-16'}>

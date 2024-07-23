@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint . --ext .jsx,.js,.tsx,.ts  --no-error-on-unmatched-pattern --fix && stylelint --fix ./{,*/}*.{scss,css} --allow-empty-input",
     "format": "prettier --write .",
-    "prettier": ".prettierrc -w ."
+    "prettier": ".prettierrc -w .",
+    "prepare": "husky"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
@@ -42,6 +43,8 @@
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
     "eslint-config-prettier": "^9.1.0",
+    "husky": "^9.1.1",
+    "lint-staged": "^15.2.7",
     "postcss": "^8",
     "prettier": "^3.3.2",
     "prettier-plugin-tailwindcss": "^0.6.5",
@@ -49,5 +52,11 @@
     "stylelint": "^16.7.0",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
+  },
+  "lint-staged": {
+    "app/**/*.{js,jsx,ts,tsx,scss,css}": [
+      "eslint --no-error-on-unmatched-pattern --fix && stylelint --fix",
+      "prettier --write"
+    ]
   }
 }
