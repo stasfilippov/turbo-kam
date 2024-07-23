@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 
+import { ReactNode } from 'react'
+
 import { cn } from '@/lib/utils'
 import { Manrope } from 'next/font/google'
 
@@ -21,7 +23,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: ReactNode
 }>) {
   return (
     <html lang={'en'}>

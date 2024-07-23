@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint app --ext .jsx,.js,.tsx,.ts  --no-error-on-unmatched-pattern --fix && stylelint --fix app/{,*/}*.{scss,css} --allow-empty-input",
+    "lint": "eslint . --ext .jsx,.js,.tsx,.ts  --no-error-on-unmatched-pattern --fix && stylelint --fix ./{,*/}*.{scss,css} --allow-empty-input",
     "format": "prettier --write .",
     "prettier": ".prettierrc -w ."
   },
