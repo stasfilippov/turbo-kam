@@ -63,7 +63,7 @@ export const Modal = ({ children, className }: Props) => {
 
   return (
     <Dialog>
-      <DialogTrigger className={className}>{children}</DialogTrigger>
+      <DialogTrigger className={cn(className)}>{children}</DialogTrigger>
       <DialogContent>
         <DialogHeader>
           <DialogTitle className={'text-center'}>

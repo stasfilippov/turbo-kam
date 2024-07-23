@@ -15,113 +15,127 @@ const config = {
   plugins: [
     require('tailwindcss-animate'),
     plugin(function ({ addComponents, addUtilities }) {
-      addUtilities({
-        '.bold-12': {
-          fontSize: '12px',
-          fontWeight: '800',
-        },
-        '.bold-14': {
-          fontSize: '14px',
-          fontWeight: '800',
-        },
-        '.bold-16': {
+      addComponents({
+        '.button-primary': {
+          alignItems: 'center',
+          backgroundColor: 'hsl(var(--pink-primary))',
+          borderRadius: '0.375rem',
+          color: 'hsl(var(--white-primary))',
+          display: 'flex',
           fontSize: '16px',
-          fontWeight: '800',
-        },
-        '.bold-20': {
-          fontSize: '20px',
-          fontWeight: '800',
-        },
-        '.bold-24': {
-          fontSize: '24px',
-          fontWeight: '800',
-        },
-        '.bold-64': {
-          fontSize: '64px',
-          fontWeight: '800',
-        },
-        '.flexBetween': {
-          alignItems: 'center',
-          display: 'flex',
-          justifyContent: 'space-between',
-        },
-        '.flexCenter': {
-          alignItems: 'center',
-          display: 'flex',
+          fontWeight: '500',
+          height: '2.5rem',
           justifyContent: 'center',
+          padding: '0.5rem 1rem',
+          transition: 'all 300ms',
+          whiteSpace: 'nowrap',
         },
-        '.flexEnd': {
-          alignItems: 'center',
-          display: 'flex',
-          justifyContent: 'flex-end',
-        },
-        '.flexStart': {
-          alignItems: 'center',
-          display: 'flex',
-          justifyContent: 'flex-start',
-        },
-        '.medium-9': {
-          fontSize: '9px',
-          fontWeight: '500',
-        },
-        '.medium-12': {
-          fontSize: '12px',
-          fontWeight: '500',
-        },
-        '.medium-16': {
-          fontSize: '16px',
-          fontWeight: '500',
-        },
-        '.medium-20': {
-          fontSize: '20px',
-          fontWeight: '500',
-        },
-        '.medium-25': {
-          fontSize: '25px',
-          fontWeight: '500',
-        },
-        '.medium-48': {
-          fontSize: '48px',
-          fontWeight: '500',
-        },
-        '.medium-55': {
-          fontSize: '55px',
-          fontWeight: '500',
-        },
-        '.medium-64': {
-          fontSize: '64px',
-          fontWeight: '500',
-        },
-        '.medium-70': {
-          fontSize: '70px',
-          fontWeight: '500',
-        },
-        '.regular-11': {
-          fontSize: '11px',
-          fontWeight: '300',
-        },
-        '.regular-12': {
-          fontSize: '12px',
-          fontWeight: '300',
-        },
-        '.regular-14': {
-          fontSize: '14px',
-          fontWeight: '400',
-        },
-        '.regular-16': {
-          fontSize: '16px',
-          fontWeight: '300',
-        },
-        '.regular-48': {
-          fontSize: '48px',
-          fontWeight: '400',
+        '.max-container': {
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          maxWidth: '1180px',
         },
       }),
-        addComponents({
-          '.max-container': {
-            marginLeft: 'auto',
-            marginRight: 'auto',
-            maxWidth: '1180px',
+        addUtilities({
+          '.bold-12': {
+            fontSize: '12px',
+            fontWeight: '800',
+          },
+          '.bold-14': {
+            fontSize: '14px',
+            fontWeight: '800',
+          },
+          '.bold-16': {
+            fontSize: '16px',
+            fontWeight: '800',
+          },
+          '.bold-20': {
+            fontSize: '20px',
+            fontWeight: '800',
+          },
+          '.bold-24': {
+            fontSize: '24px',
+            fontWeight: '800',
+          },
+          '.bold-64': {
+            fontSize: '64px',
+            fontWeight: '800',
+          },
+          '.flexBetween': {
+            alignItems: 'center',
+            display: 'flex',
+            justifyContent: 'space-between',
+          },
+          '.flexCenter': {
+            alignItems: 'center',
+            display: 'flex',
+            justifyContent: 'center',
+          },
+          '.flexEnd': {
+            alignItems: 'center',
+            display: 'flex',
+            justifyContent: 'flex-end',
+          },
+          '.flexStart': {
+            alignItems: 'center',
+            display: 'flex',
+            justifyContent: 'flex-start',
+          },
+          '.medium-9': {
+            fontSize: '9px',
+            fontWeight: '500',
+          },
+          '.medium-12': {
+            fontSize: '12px',
+            fontWeight: '500',
+          },
+          '.medium-16': {
+            fontSize: '16px',
+            fontWeight: '500',
+          },
+          '.medium-20': {
+            fontSize: '20px',
+            fontWeight: '500',
+          },
+          '.medium-25': {
+            fontSize: '25px',
+            fontWeight: '500',
+          },
+          '.medium-48': {
+            fontSize: '48px',
+            fontWeight: '500',
+          },
+          '.medium-55': {
+            fontSize: '55px',
+            fontWeight: '500',
+          },
+          '.medium-64': {
+            fontSize: '64px',
+            fontWeight: '500',
+          },
+          '.medium-70': {
+            fontSize: '70px',
+            fontWeight: '500',
+          },
+          '.regular-11': {
+            fontSize: '11px',
+            fontWeight: '300',
+          },
+          '.regular-12': {
+            fontSize: '12px',
+            fontWeight: '300',
+          },
+          '.regular-14': {
+            fontSize: '14px',
+            fontWeight: '400',
+          },
+          '.regular-16': {
+            fontSize: '16px',
+            fontWeight: '300',
+          },
+          '.regular-48': {
+            fontSize: '48px',
+            fontWeight: '400',
           },
         })
     }),

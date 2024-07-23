@@ -14,7 +14,7 @@ export const Footer = () => {
   return (
     <footer className={'-mt-[35px] rounded-t-5xl bg-primary-black py-[60px]'}>
       <div className={'max-container pb-10'}>
-        <Modal className={'block w-full text-start'}>
+        <Modal className={'block w-full bg-transparent text-start hover:bg-none'}>
           <div className={s.textWrapper}>
             <span className={cn(s.footerDescr, 'medium-70')}>Есть вопросы?</span>
             <h2 className={cn(s.footerHeader, 'medium-64')}>Оставьте заявку и мы свяжемся</h2>

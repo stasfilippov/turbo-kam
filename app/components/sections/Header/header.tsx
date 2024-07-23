@@ -53,18 +53,14 @@ export const Header = () => {
             href={'tel:+79372964868'}
           >
             <Phone size={18} />
-            <span className={'transition-all duration-300 bold-16 hover:underline'}>
-              +79372964868
-            </span>
+            <span className={'bold-16 hover:underline'}>+79372964868</span>
           </Link>
           <p className={'text-center text-primary-white medium-12'}>
             <span className={'bold-12'}>Пн-Пт</span> — С 8:00 до 17:00 <br />
             <span className={'bold-12'}>Сб-Вс</span> — Выходной
           </p>
         </div>
-        <Modal>
-          <SuperButton>Оставить заявку</SuperButton>
-        </Modal>
+        <Modal className={'button-primary hover:bg-primary-pinkHover'}>Оставить заявку</Modal>
       </div>
     </header>
   )

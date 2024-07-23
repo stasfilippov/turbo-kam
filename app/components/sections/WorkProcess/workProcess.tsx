@@ -23,10 +23,10 @@ export const WorkProcess = () => {
               src={photo_submit}
             />
           </div>
-          <Modal>
-            <SuperButton className={'h-[64px] w-[280px] rounded-2xl text-primary-white medium-16'}>
-              Оставить заявку
-            </SuperButton>
+          <Modal
+            className={'button-primary h-[64px] w-[280px] rounded-2xl hover:bg-primary-pinkHover'}
+          >
+            Оставить заявку
           </Modal>
         </div>
       </div>

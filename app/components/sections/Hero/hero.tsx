@@ -19,8 +19,8 @@ export const Hero = () => {
           Профессиональный и качественный ремонт турбин в заводских условиях
         </p>
         <div className={'flex items-center gap-4'}>
-          <Modal>
-            <SuperButton>Записаться на диагностику</SuperButton>
+          <Modal className={'button-primary hover:bg-primary-pinkHover'}>
+            Записаться на диагностику
           </Modal>
           <SuperButton variant={'link'}>Посмотреть каталог</SuperButton>
         </div>
