@@ -14,20 +14,20 @@ export const CardService = ({ item }: Props) => {
 
   return (
     <Card className={'w-[580px] rounded-3xl bg-silver-20 p-5'}>
-      <CardTitle className={' mb-3'}>{label}</CardTitle>
-      <div className={'w-[540px] h-[260px] relative '}>
-        <div className={'absolute w-full h-full top-0 left-0 z-10 rounded-[20px]'}></div>
+      <CardTitle className={'mb-3'}>{label}</CardTitle>
+      <div className={'relative h-[260px] w-[540px]'}>
+        <div className={'absolute left-0 top-0 z-10 h-full w-full rounded-[20px]'}></div>
         <Image
           alt={'service-image'}
-          className={'object-contain object-center rounded-[20px]'}
+          className={'rounded-[20px] object-contain object-center'}
           fill
           src={src}
         />
-        <div className={'absolute z-20 top-4 left-4 flex flex-col items-start gap-4'}>
+        <div className={'absolute left-4 top-4 z-20 flex flex-col items-start gap-4'}>
           {typesCar.map((car, index) => {
             return (
               <Badge
-                className={'py-[2px] px-2 bg-primary-pink rounded-5xl medium-16 text-primary-white'}
+                className={'rounded-5xl bg-primary-pink px-2 py-[2px] text-primary-white medium-16'}
                 key={index}
               >
                 {car.slice(0, 1).toUpperCase() + car.slice(1) + ' авто'}

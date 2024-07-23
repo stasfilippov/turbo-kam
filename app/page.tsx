@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <main>
         <Hero />
-        <div className={'bg-silver-10 rounded-5xl '}>
+        <div className={'rounded-5xl bg-silver-10'}>
           <Advantages />
           <Services />
         </div>

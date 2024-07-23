@@ -82,7 +82,7 @@ export const Modal = ({ children, className }: Props) => {
                 <FormItem>
                   <FormControl>
                     <Input
-                      className={'min-w-[220px] h-[54px] rounded-2xl'}
+                      className={'h-[54px] min-w-[220px] rounded-2xl'}
                       placeholder={'Ваше имя'}
                       {...field}
                     />
@@ -102,7 +102,7 @@ export const Modal = ({ children, className }: Props) => {
                       placeholder={'999 999-99-99'}
                       {...field}
                       className={
-                        'flex w-full border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 min-w-[220px] h-[54px] rounded-2xl'
+                        'flex h-[54px] w-full min-w-[220px] rounded-2xl border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50'
                       }
                     />
                   </FormControl>
@@ -112,7 +112,7 @@ export const Modal = ({ children, className }: Props) => {
             />
             <Button
               className={
-                'min-w-[220px] h-[54px] flex items-center justify-center bg-primary-pink text-primary-white medium-16 rounded-2xl hover:bg-primary-pinkHovers'
+                'hover:bg-primary-pinkHovers flex h-[54px] min-w-[220px] items-center justify-center rounded-2xl bg-primary-pink text-primary-white medium-16'
               }
               type={'submit'}
             >

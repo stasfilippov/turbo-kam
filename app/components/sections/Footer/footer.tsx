@@ -12,8 +12,8 @@ import { Modal } from '../../ui/modal/modal'
 
 export const Footer = () => {
   return (
-    <footer className={'bg-primary-black rounded-t-5xl -mt-[35px] py-[60px] '}>
-      <div className={'max-container pb-10 '}>
+    <footer className={'-mt-[35px] rounded-t-5xl bg-primary-black py-[60px]'}>
+      <div className={'max-container pb-10'}>
         <Modal className={'block w-full text-start'}>
           <div className={s.textWrapper}>
             <span className={cn(s.footerDescr, 'medium-70')}>Есть вопросы?</span>
@@ -24,10 +24,10 @@ export const Footer = () => {
       </div>
       <Separator className={'my-6 bg-primary-white/20'} />
       <div className={'max-container flex justify-between'}>
-        <div className={'flex flex-col medium-20 text-primary-white gap-3'}>
+        <div className={'flex flex-col gap-3 text-primary-white medium-20'}>
           {NAV_LINKS.map(item => (
             <Link
-              className={'duration-300 transition-all hover:text-primary-white/40'}
+              className={'transition-all duration-300 hover:text-primary-white/40'}
               href={item.href}
               key={item.key}
             >
@@ -37,21 +37,21 @@ export const Footer = () => {
         </div>
         <div>
           <div className={'mb-5'}>
-            <div className={'mb-4 medium-9 text-primary-white/40'}>Офис</div>
-            <p className={'regular-16 text-primary-white'}>
+            <div className={'mb-4 text-primary-white/40 medium-9'}>Офис</div>
+            <p className={'text-primary-white regular-16'}>
               423800, Республика Татарстан, <br /> г. Набережные Челны
             </p>
           </div>
           <div>
-            <div className={'mb-4 medium-9 text-primary-white/40'}>График работы</div>
-            <p className={'regular-16 text-primary-white'}>
+            <div className={'mb-4 text-primary-white/40 medium-9'}>График работы</div>
+            <p className={'text-primary-white regular-16'}>
               Пн-Пт — С 8:00 до 17:00 <br />
               Сб-Вс — Выходной
             </p>
           </div>
         </div>
         <div className={'flex flex-col items-end justify-between'}>
-          <Link className={cn(s.linkGoHome, 'medium-20 flexCenter')} href={'/'}>
+          <Link className={cn(s.linkGoHome, 'flexCenter medium-20')} href={'/'}>
             <span>Наверх</span>
             <div className={cn(s.iconWrapper, 'flexCenter')}>
               <ArrowUp />
@@ -60,7 +60,7 @@ export const Footer = () => {
           <div className={'flex flex-col items-end'}>
             <Link
               className={
-                'regular-48 text-primary-white transition-all duration-300 hover:text-primary-white/40'
+                'text-primary-white transition-all duration-300 regular-48 hover:text-primary-white/40'
               }
               href={'tel:+79372964868'}
             >
@@ -68,7 +68,7 @@ export const Footer = () => {
             </Link>
             <Link
               className={
-                'regular-48 text-primary-white transition-all duration-300 hover:text-primary-white/40'
+                'text-primary-white transition-all duration-300 regular-48 hover:text-primary-white/40'
               }
               href={'mailto:info@tks.com'}
             >
@@ -82,13 +82,13 @@ export const Footer = () => {
         <Link className={'flexCenter'} href={'/'}>
           <Image alt={'logo'} height={80} src={logo} width={80} />
           <div className={'flex flex-col text-primary-white drop-shadow-md'}>
-            <span className={'bold-20 italic uppercase'}>
+            <span className={'uppercase italic bold-20'}>
               <span className={'text-primary-pink'}>Турбо Кам</span> Сервис
             </span>
             <span className={'medium-12'}>Ремонт и продажа турбин</span>
           </div>
         </Link>
-        <div className={'flex flex-col regular-11 text-primary-white/40'}>
+        <div className={'flex flex-col text-primary-white/40 regular-11'}>
           <Link
             className={'transition-all duration-300 hover:text-primary-white hover:underline'}
             href={'/'}
@@ -102,10 +102,10 @@ export const Footer = () => {
             Соглашение о конфиденциальности
           </Link>
         </div>
-        <div className={'regular-11 text-primary-white/40'}>
+        <div className={'text-primary-white/40 regular-11'}>
           Разработка
           <Link
-            className={'ml-2 medium-12 text-primary-white'}
+            className={'ml-2 text-primary-white medium-12'}
             href={'https://t.me/stasfilippov307'}
           >
             stasfilippov

@@ -9,22 +9,22 @@ import { Modal } from '../../ui/modal/modal'
 export const WorkProcess = () => {
   return (
     <section>
-      <div className={'max-container py-[10rem] grid grid-cols-4 gap-5'}>
-        <h2 className={'text-primary-white medium-64 col-span-2'}>Процесс работы</h2>
+      <div className={'max-container grid grid-cols-4 gap-5 py-[10rem]'}>
+        <h2 className={'col-span-2 text-primary-white medium-64'}>Процесс работы</h2>
         {STEPS_OF_PROCESS.map(item => {
           return <CardStepOfProcess item={item} key={item.id} />
         })}
         <div className={'flex flex-col justify-between'}>
-          <div className={'relative w-full h-[144px]'}>
+          <div className={'relative h-[144px] w-full'}>
             <Image
               alt={'photo_submit'}
-              className={'rounded-3xl object-cover overflow-hidden'}
+              className={'overflow-hidden rounded-3xl object-cover'}
               fill
               src={photo_submit}
             />
           </div>
           <Modal>
-            <SuperButton className={'text-primary-white w-[280px] h-[64px] medium-16 rounded-2xl'}>
+            <SuperButton className={'h-[64px] w-[280px] rounded-2xl text-primary-white medium-16'}>
               Оставить заявку
             </SuperButton>
           </Modal>

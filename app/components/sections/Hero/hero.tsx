@@ -6,10 +6,10 @@ import { Modal } from '../../ui/modal/modal'
 
 export const Hero = () => {
   return (
-    <section className={'h-screen relative text-primary-white'}>
+    <section className={'relative h-screen text-primary-white'}>
       <div
         className={
-          'max-container h-full flex flex-col justify-end items-center gap-y-4 pt-5 pb-[200px]'
+          'max-container flex h-full flex-col items-center justify-end gap-y-4 pb-[200px] pt-5'
         }
       >
         <h1 className={'text-center bold-64'}>
@@ -25,7 +25,7 @@ export const Hero = () => {
           <SuperButton variant={'link'}>Посмотреть каталог</SuperButton>
         </div>
       </div>
-      <Image alt={'background'} className={'object-cover object-center -z-20'} fill src={hero} />
+      <Image alt={'background'} className={'-z-20 object-cover object-center'} fill src={hero} />
     </section>
   )
 }

@@ -13,24 +13,24 @@ export const Header = () => {
   return (
     <header
       className={
-        'max-w-[1600px] w-full fixed top-0 left-1/2 translate-x-[-50%] z-10 flexBetween py-[10px] px-[15px] bg-primary-black/40 rounded-b-[20px] text-primary-white medium-16'
+        'fixed left-1/2 top-0 z-10 w-full max-w-[1600px] translate-x-[-50%] rounded-b-[20px] bg-primary-black/40 px-[15px] py-[10px] text-primary-white flexBetween medium-16'
       }
     >
       <Link className={'flexCenter'} href={'/'}>
         <Image alt={'logo'} height={80} src={logo} width={80} />
         <div className={'flex flex-col text-primary-white drop-shadow-md'}>
-          <span className={'bold-20 italic uppercase'}>
+          <span className={'uppercase italic bold-20'}>
             <span className={'text-primary-pink'}>Турбо Кам</span> Сервис
           </span>
           <span className={'medium-12'}>Ремонт и продажа турбин</span>
         </div>
       </Link>
-      <nav className={'flexCenter gap-[30px]'}>
+      <nav className={'gap-[30px] flexCenter'}>
         {NAV_LINKS.map(item => {
           return (
             <Link
               className={
-                'bold-16 transition-all duration-300 hover:text-primary-white/40 hover:underline'
+                'transition-all duration-300 bold-16 hover:text-primary-white/40 hover:underline'
               }
               href={item.href}
               key={item.key}
@@ -41,23 +41,23 @@ export const Header = () => {
         })}
       </nav>
       <div>
-        <span className={'text-primary-pink bold-14 '}>Мы находимся по адресу:</span>
-        <p className={'regular-14 text-primary-white'}>
+        <span className={'text-primary-pink bold-14'}>Мы находимся по адресу:</span>
+        <p className={'text-primary-white regular-14'}>
           Республика Татарстан, <br /> г. Набережные Челны
         </p>
       </div>
-      <div className={'flexCenter gap-6'}>
+      <div className={'gap-6 flexCenter'}>
         <div className={'flex flex-col gap-1'}>
           <Link
-            className={'flexCenter gap-2 transition-all duration-300 hover:text-primary-pink'}
+            className={'gap-2 transition-all duration-300 flexCenter hover:text-primary-pink'}
             href={'tel:+79372964868'}
           >
             <Phone size={18} />
-            <span className={'bold-16 transition-all duration-300 hover:underline '}>
+            <span className={'transition-all duration-300 bold-16 hover:underline'}>
               +79372964868
             </span>
           </Link>
-          <p className={'medium-12 text-primary-white text-center'}>
+          <p className={'text-center text-primary-white medium-12'}>
             <span className={'bold-12'}>Пн-Пт</span> — С 8:00 до 17:00 <br />
             <span className={'bold-12'}>Сб-Вс</span> — Выходной
           </p>

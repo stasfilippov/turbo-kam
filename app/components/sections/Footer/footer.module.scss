@@ -19,15 +19,15 @@
 }
 
 .footerArrow {
-  @apply absolute top-0 right-0;
+  @apply absolute right-0 top-0;
 }
 
 .iconWrapper {
-  @apply bg-primary-white rounded-full w-[70px] h-[70px]  text-primary-black;
+  @apply h-[70px] w-[70px] rounded-full bg-primary-white text-primary-black;
 }
 
 .linkGoHome {
-  @apply gap-6  text-primary-white;
+  @apply gap-6 text-primary-white;
 
   &:hover {
     @apply text-primary-white/40 transition-all duration-300;

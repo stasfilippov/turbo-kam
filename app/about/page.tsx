@@ -21,11 +21,11 @@ export default function About() {
     <>
       <section>
         <div className={'max-container mt-20'}>
-          <h1 className={'text-primary-white medium-48 mb-7'}>
+          <h1 className={'mb-7 text-primary-white medium-48'}>
             <span className={'text-primary-pink'}>Турбо Кам Сервис -</span>О компании
           </h1>
         </div>
-        <div className={'bg-silver-10 rounded-t-5xl p-10'}>
+        <div className={'rounded-t-5xl bg-silver-10 p-10'}>
           <div className={'max-container'}>
             <ResizablePanelGroup className={'gap-4'} direction={'horizontal'}>
               <ResizablePanel defaultSize={25}>
@@ -33,9 +33,9 @@ export default function About() {
               </ResizablePanel>
               <ResizablePanel defaultSize={75}>
                 <h3 className={'medium-24 mb-7'}>Приветствую Вас, коллеги, друзья!</h3>
-                <p className={'medium-16 mb-3'}>
+                <p className={'mb-3 medium-16'}>
                   Я, <span className={'bold-16'}>Марат Сабирзянович,</span> руководитель компании{' '}
-                  <span className={'bold-20 text-primary-pink'}>&quot;Турбо Кам Сервис&quot;</span>.
+                  <span className={'text-primary-pink bold-20'}>&quot;Турбо Кам Сервис&quot;</span>.
                   Наш центр по ремонту турбин не отстает от современного темпа развития. Мы
                   стремимся к улучшению качества предоставляемых услуг.
                 </p>
@@ -48,11 +48,11 @@ export default function About() {
               </ResizablePanel>
             </ResizablePanelGroup>
           </div>
-          <Separator className={'bg-gray-400 my-10'} />
+          <Separator className={'my-10 bg-gray-400'} />
           <div className={'max-container'}>
-            <p className={'medium-16 text-center'}>
+            <p className={'text-center medium-16'}>
               <span className={'medium-20'}>Компания</span>{' '}
-              <span className={'bold-20 text-primary-pink'}>&quot;Турбо Кам Сервис&quot;</span> была
+              <span className={'text-primary-pink bold-20'}>&quot;Турбо Кам Сервис&quot;</span> была
               основана в 2012 году в качестве производственно-технического предприятия,
               специализирующегося на ремонте, продаже и диагностике турбин (турбокомпрессоров) и
               систем турбонаддува для различных типов двигателей внутреннего сгорания. В настоящее
@@ -72,7 +72,7 @@ export default function About() {
                         <Card className={'relative h-[200px] rounded-3xl'}>
                           <Image
                             alt={'turbine_img'}
-                            className={'object-cover object-center rounded-3xl'}
+                            className={'rounded-3xl object-cover object-center'}
                             fill
                             src={item.src}
                           />
