@@ -17,7 +17,6 @@ export default function Home() {
         <WorkProcess />
         <ContactUs />
       </main>
-      <Footer />
     </>
   )
 }
