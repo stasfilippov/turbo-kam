@@ -56,7 +56,11 @@
   "lint-staged": {
     "app/**/*.{js,jsx,ts,tsx,scss,css}": [
       "eslint --no-error-on-unmatched-pattern --fix && stylelint --fix",
-      "prettier --write"
+      "prettier --write --ignore-unknown"
+    ],
+    "components/**/*.{js,jsx,ts,tsx}": [
+      "eslint --no-error-on-unmatched-pattern --fix && stylelint --fix",
+      "prettier --write --ignore-unknown"
     ]
   }
 }
