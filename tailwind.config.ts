@@ -61,6 +61,10 @@ const config = {
             fontSize: '64px',
             fontWeight: '800',
           },
+          '.bold-70': {
+            fontSize: '70px',
+            fontWeight: '800',
+          },
           '.flexBetween': {
             alignItems: 'center',
             display: 'flex',
