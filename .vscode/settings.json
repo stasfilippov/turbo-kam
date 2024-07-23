@@ -1,0 +1,19 @@
+{
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.formatOnSave": true,
+  "eslint.format.enable": true,
+  "stylelint.customSyntax": "postcss-scss",
+  "stylelint.validate": ["css", "less", "postcss", "scss"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  }
+}

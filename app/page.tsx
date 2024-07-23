@@ -5,20 +5,19 @@ import { Hero } from './components/sections/Hero/hero'
 import { Services } from './components/sections/Services/services'
 import { WorkProcess } from './components/sections/WorkProcess/workProcess'
 
-
 export default function Home() {
   return (
     <>
       <main>
-        <Hero/>
-        <div className='bg-silver-10 rounded-5xl '>
-          <Advantages/>
-          <Services/>
+        <Hero />
+        <div className={'bg-silver-10 rounded-5xl '}>
+          <Advantages />
+          <Services />
         </div>
-        <WorkProcess/>
-        <ContactUs/>
+        <WorkProcess />
+        <ContactUs />
       </main>
-      <Footer/>
+      <Footer />
     </>
-  );
+  )
 }

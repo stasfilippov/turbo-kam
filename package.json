@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint app --ext .jsx,.js,.tsx,.ts  --no-error-on-unmatched-pattern --fix && stylelint --fix app/{,*/}*.{scss,css} --allow-empty-input",
+    "format": "prettier --write .",
     "prettier": ".prettierrc -w ."
   },
   "dependencies": {
@@ -32,6 +33,9 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@it-incubator/eslint-config": "^1.0.3",
+    "@it-incubator/prettier-config": "^0.1.2",
+    "@it-incubator/stylelint-config": "^2.0.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
@@ -41,6 +45,7 @@
     "postcss": "^8",
     "prettier": "^3.3.2",
     "sass": "^1.77.8",
+    "stylelint": "^16.7.0",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }
