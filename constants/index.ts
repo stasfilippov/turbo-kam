@@ -15,7 +15,7 @@ import { StaticImageData } from 'next/image'
 
 // NAVIGATION
 export const NAV_LINKS = [
-  { href: '/', key: 'catalog', label: 'Каталог' },
+  { href: '/catalog', key: 'catalog', label: 'Каталог' },
   { href: '/', key: 'services', label: 'Услуги' },
   { href: 'about', key: 'about', label: 'O нас' },
   { href: '/', key: 'contacts', label: 'Контакты' },
@@ -145,6 +145,25 @@ export const STEPS_OF_PROCESS: StepOfProcess[] = [
   },
 ]
 
+export const CARS_TYPES_TABS: CarsTypesTabs[] = [
+  {
+    label: 'Все',
+    value: 'all',
+  },
+  {
+    label: 'Для легковых автомобилей',
+    value: 'passengers',
+  },
+  {
+    label: 'Для грузовых автомобилей',
+    value: 'trucks',
+  },
+  {
+    label: 'Для различной техники',
+    value: 'various',
+  },
+]
+
 export type Advantage = {
   description: string
   key: string
@@ -163,4 +182,9 @@ export type StepOfProcess = {
   description: string
   id: string
   label: string
+}
+
+export type CarsTypesTabs = {
+  label: string
+  value: string
 }
