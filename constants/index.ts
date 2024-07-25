@@ -186,5 +186,7 @@ export type StepOfProcess = {
 
 export type CarsTypesTabs = {
   label: string
-  value: string
+  value: CarsType
 }
+
+export type CarsType = 'all' | 'passengers' | 'trucks' | 'various'

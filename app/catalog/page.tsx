@@ -1,7 +1,77 @@
 import React from 'react'
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { CARS_TYPES_TABS } from '@/constants'
+import { CARS_TYPES_TABS, CarsType } from '@/constants'
+import k36 from '@/public/k36.jpg'
+import s2b from '@/public/s2b.jpg'
+import tkr6 from '@/public/tkr6.jpg'
+import { StaticImageData } from 'next/image'
+
+import { CardOfCatalog } from '../components/ui/card/cardOfCatalog'
+
+export type TurbineType = {
+  brands: string[]
+  img: StaticImageData
+  label: string
+  type: Omit<CarsType, 'all'>
+}
+
+export type DataTurbinesType = {
+  items: TurbineType[]
+  type: Omit<CarsType, 'all'>
+}
+
+const DATA_TURBINES: DataTurbinesType[] = [
+  {
+    items: [],
+    type: 'passengers',
+  },
+  {
+    items: [
+      {
+        brands: ['МТЗ', 'ГАЗ', 'ЗИЛ'],
+        img: k36,
+        label: 'TKP 6',
+        type: 'trucks',
+      },
+      {
+        brands: ['КамАЗ'],
+        img: s2b,
+        label: 'SCHWITZER S2B',
+        type: 'trucks',
+      },
+      {
+        brands: ['МАЗ', 'БелАЗ'],
+        img: tkr6,
+        label: 'K36',
+        type: 'trucks',
+      },
+      {
+        brands: ['МАЗ', 'БелАЗ'],
+        img: tkr6,
+        label: 'K36',
+        type: 'trucks',
+      },
+      {
+        brands: ['МАЗ', 'БелАЗ'],
+        img: tkr6,
+        label: 'K36',
+        type: 'trucks',
+      },
+      {
+        brands: ['МАЗ', 'БелАЗ'],
+        img: tkr6,
+        label: 'K36',
+        type: 'trucks',
+      },
+    ],
+    type: 'trucks',
+  },
+  {
+    items: [],
+    type: 'various',
+  },
+]
 
 export default function Catalog() {
   return (
@@ -40,9 +110,17 @@ export default function Catalog() {
               })}
             </TabsList>
             {CARS_TYPES_TABS.map(type => {
+              const cards = DATA_TURBINES.find(item => item.type === type.value)
+
               return (
-                <TabsContent key={type.value} value={type.value}>
-                  {type.label}
+                <TabsContent
+                  className={'grid grid-cols-[repeat(auto-fit,minmax(360px,1fr))] gap-5'}
+                  key={type.value}
+                  value={type.value}
+                >
+                  {cards?.items.map(item => {
+                    return <CardOfCatalog item={item} key={item.label} />
+                  })}
                 </TabsContent>
               )
             })}
