@@ -1,5 +1,6 @@
-import { Separator } from '@/components/ui/separator'
 import { StepOfProcess } from '@/constants'
+
+import { Separator } from '..'
 
 type Props = {
   item: StepOfProcess

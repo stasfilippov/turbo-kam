@@ -1,10 +1,9 @@
 import { TurbineType } from '@/app/catalog/page'
 import { Card } from '@/components/ui/card'
-import img from '@/public/turbine1.jpeg'
 import { ArrowUpRight } from 'lucide-react'
 import Image from 'next/image'
 
-import { Modal } from '../modal/modal'
+import { ModalForm } from '..'
 
 type Props = {
   item: TurbineType
@@ -41,7 +40,9 @@ export const CardOfCatalog = ({ item }: Props) => {
             </span>
           ))}
         </div>
-        <Modal className={'button-primary hover:bg-primary-pinkHover'}>Оформить заказ</Modal>
+        <ModalForm className={'button-primary hover:bg-primary-pinkHover'}>
+          Оформить заказ
+        </ModalForm>
       </div>
     </Card>
   )

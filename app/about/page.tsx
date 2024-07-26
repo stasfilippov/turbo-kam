@@ -1,20 +1,19 @@
 import React from 'react'
 
-import { Card, CardContent } from '@/components/ui/card'
 import {
+  Card,
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from '@/components/ui/carousel'
-import { ResizablePanel, ResizablePanelGroup } from '@/components/ui/resizable'
-import { Separator } from '@/components/ui/separator'
+  ResizablePanel,
+  ResizablePanelGroup,
+  Separator,
+} from '@/components/ui'
 import { PHOTOS } from '@/constants'
 import owner from '@/public/owner_image.jpg'
 import Image from 'next/image'
-
-import { Footer } from '../components/sections/Footer/footer'
 
 export default function About() {
   return (

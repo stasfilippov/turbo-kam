@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { CardService } from '@/app/components/ui/card/cardService'
+import { CardService } from '@/components/ui'
 import { SERVICES } from '@/constants'
 
 export const Services = () => {

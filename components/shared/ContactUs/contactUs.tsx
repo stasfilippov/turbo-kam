@@ -1,32 +1,19 @@
 'use client'
 
-import React, { ReactNode } from 'react'
+import React from 'react'
 import { useForm } from 'react-hook-form'
 import PhoneInput from 'react-phone-number-input'
 
-import { Button } from '@/components/ui/button'
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from '@/components/ui/dialog'
-import { Form, FormControl, FormField, FormItem } from '@/components/ui/form'
-import { Input } from '@/components/ui/input'
-import { cn } from '@/lib/utils'
+import { Button, Form, FormControl, FormField, FormItem, Input } from '@/components/ui'
+import bg_turbine_repair from '@/public/turbine_rep.jpg'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { parsePhoneNumber } from 'libphonenumber-js'
+import Image from 'next/image'
 import { z } from 'zod'
 
-import { SuperButton } from '../button/button'
+import 'react-phone-number-input/style.css'
 
-type Props = {
-  children: ReactNode
-  className?: string
-}
-
+//TODO - handling form error
 export const zPhoneNumber = z.string().transform((value, ctx) => {
   const phoneNumber = parsePhoneNumber(value, {
     defaultCountry: 'RU',
@@ -49,7 +36,7 @@ const formSchema = z.object({
   username: z.string().min(2).max(50),
 })
 
-export const Modal = ({ children, className }: Props) => {
+export const ContactUs = () => {
   const form = useForm<z.infer<typeof formSchema>>({
     defaultValues: {
       username: '',
@@ -62,19 +49,26 @@ export const Modal = ({ children, className }: Props) => {
   }
 
   return (
-    <Dialog>
-      <DialogTrigger className={cn(className)}>{children}</DialogTrigger>
-      <DialogContent>
-        <DialogHeader>
-          <DialogTitle className={'text-center'}>
-            Оставьте свой номер, и мы перезвоним Вам
-          </DialogTitle>
-          <DialogDescription className={'text-center'}>
-            Заполните форму, мы свяжемся с Вами и обсудим детали
-          </DialogDescription>
-        </DialogHeader>
+    <section className={'relative rounded-t-5xl bg-gradient-to-b from-[#1e1e1ef4]'}>
+      <Image
+        alt={'turbine_repair'}
+        className={'-z-10 rounded-t-5xl object-cover object-center'}
+        fill
+        src={bg_turbine_repair}
+      />
+      <div className={'max-container flex min-h-[800px] flex-col items-center justify-center'}>
+        <h2
+          className={
+            'mb-6 inline-block max-w-[600px] text-center leading-[50px] tracking-[2px] text-primary-white medium-64'
+          }
+        >
+          Ответим на все ваши вопросы
+        </h2>
+        <p className={'mb-12 inline-block max-w-[400px] text-center text-primary-white medium-16'}>
+          Оставьте заявку, и мы свяжемся с вами, чтобы обсудить все ваши вопросы
+        </p>
         <Form {...form}>
-          <form className={'flex flex-col gap-5'} onSubmit={form.handleSubmit(onSubmit)}>
+          <form className={'flex gap-8'} onSubmit={form.handleSubmit(onSubmit)}>
             <FormField
               control={form.control}
               name={'username'}
@@ -120,7 +114,7 @@ export const Modal = ({ children, className }: Props) => {
             </Button>
           </form>
         </Form>
-      </DialogContent>
-    </Dialog>
+      </div>
+    </section>
   )
 }

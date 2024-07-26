@@ -1,8 +1,9 @@
 import React from 'react'
 
-import { Card } from '@/components/ui/card'
-import { Advantage, Service } from '@/constants'
+import { Advantage } from '@/constants'
 import Image from 'next/image'
+
+import { Card } from '..'
 
 type Props = {
   item: Advantage
