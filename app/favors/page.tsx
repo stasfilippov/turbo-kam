@@ -1,4 +1,4 @@
-export default function Works() {
+export default function Favors() {
   return (
     <section className={'mt-28 rounded-t-5xl bg-silver-10 p-10'}>
       <div className={'max-container pb-10 pt-10'}>
