@@ -14,6 +14,6 @@
   "stylelint.customSyntax": "postcss-scss",
   "stylelint.validate": ["css", "less", "postcss", "scss"],
   "editor.codeActionsOnSave": {
-    "source.fixAll": true
+    "source.fixAll": "explicit"
   }
 }
