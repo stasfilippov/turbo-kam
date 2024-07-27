@@ -1,9 +1,8 @@
-import { Advantages } from './components/sections/Advantages/advantages'
-import { ContactUs } from './components/sections/ContactUs/contactUs'
-import { Footer } from './components/sections/Footer/footer'
-import { Hero } from './components/sections/Hero/hero'
-import { Services } from './components/sections/Services/services'
-import { WorkProcess } from './components/sections/WorkProcess/workProcess'
+import { Advantages } from '../components/shared/Advantages/advantages'
+import { ContactUs } from '../components/shared/ContactUs/contactUs'
+import { Hero } from '../components/shared/Hero/hero'
+import { Services } from '../components/shared/Services/services'
+import { WorkProcess } from '../components/shared/WorkProcess/workProcess'
 
 export default function Home() {
   return (

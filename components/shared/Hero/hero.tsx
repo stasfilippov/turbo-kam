@@ -1,8 +1,6 @@
-import { SuperButton } from '@/app/components/ui/button/button'
+import { ModalForm, SuperButton } from '@/components/ui'
 import hero from '@/public/hero.png'
 import Image from 'next/image'
-
-import { Modal } from '../../ui/modal/modal'
 
 export const Hero = () => {
   return (
@@ -19,9 +17,9 @@ export const Hero = () => {
           Профессиональный и качественный ремонт турбин в заводских условиях
         </p>
         <div className={'flex items-center gap-4'}>
-          <Modal className={'button-primary hover:bg-primary-pinkHover'}>
+          <ModalForm className={'button-primary hover:bg-primary-pinkHover'}>
             Записаться на диагностику
-          </Modal>
+          </ModalForm>
           <SuperButton variant={'link'}>Посмотреть каталог</SuperButton>
         </div>
       </div>

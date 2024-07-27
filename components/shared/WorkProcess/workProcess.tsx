@@ -1,10 +1,7 @@
+import { CardStepOfProcess, ModalForm } from '@/components/ui'
 import { STEPS_OF_PROCESS } from '@/constants'
 import photo_submit from '@/public/turbine1.jpeg'
 import Image from 'next/image'
-
-import { SuperButton } from '../../ui/button/button'
-import { CardStepOfProcess } from '../../ui/card/cardStepOfProcess'
-import { Modal } from '../../ui/modal/modal'
 
 export const WorkProcess = () => {
   return (
@@ -23,11 +20,11 @@ export const WorkProcess = () => {
               src={photo_submit}
             />
           </div>
-          <Modal
+          <ModalForm
             className={'button-primary h-[64px] w-[280px] rounded-2xl hover:bg-primary-pinkHover'}
           >
             Оставить заявку
-          </Modal>
+          </ModalForm>
         </div>
       </div>
     </section>

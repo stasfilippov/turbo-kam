@@ -1,13 +1,11 @@
 import React from 'react'
 
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { CardOfCatalog, Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui'
 import { CARS_TYPES_TABS, CarsType } from '@/constants'
 import k36 from '@/public/k36.jpg'
 import s2b from '@/public/s2b.jpg'
 import tkr6 from '@/public/tkr6.jpg'
 import { StaticImageData } from 'next/image'
-
-import { CardOfCatalog } from '../components/ui/card/cardOfCatalog'
 
 export type TurbineType = {
   brands: string[]

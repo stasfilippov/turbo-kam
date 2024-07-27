@@ -1,13 +1,11 @@
 import React from 'react'
 
+import { ModalForm } from '@/components/ui'
 import { NAV_LINKS } from '@/constants'
 import logo from '@/public/logo.png'
 import { Phone } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
-
-import { SuperButton } from '../../ui/button/button'
-import { Modal } from '../../ui/modal/modal'
 
 export const Header = () => {
   return (
@@ -60,7 +58,9 @@ export const Header = () => {
             <span className={'bold-12'}>Сб-Вс</span> — Выходной
           </p>
         </div>
-        <Modal className={'button-primary hover:bg-primary-pinkHover'}>Оставить заявку</Modal>
+        <ModalForm className={'button-primary hover:bg-primary-pinkHover'}>
+          Оставить заявку
+        </ModalForm>
       </div>
     </header>
   )

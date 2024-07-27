@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { CardAdvantage } from '@/app/components/ui/card/cardAdvantage'
+import { CardAdvantage } from '@/components/ui'
 import { ADVANTAGES } from '@/constants'
 import advantageImage from '@/public/advantage-image.png'
 import Image from 'next/image'

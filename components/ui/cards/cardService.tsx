@@ -1,9 +1,9 @@
 import React from 'react'
 
-import { Badge } from '@/components/ui/badge'
-import { Card, CardHeader, CardTitle } from '@/components/ui/card'
 import { Service } from '@/constants'
 import Image from 'next/image'
+
+import { Badge, Card, CardTitle } from '..'
 
 type Props = {
   item: Service
