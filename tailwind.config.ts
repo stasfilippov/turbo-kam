@@ -57,6 +57,10 @@ const config = {
             fontSize: '24px',
             fontWeight: '800',
           },
+          '.bold-48': {
+            fontSize: '48px',
+            fontWeight: '800',
+          },
           '.bold-64': {
             fontSize: '64px',
             fontWeight: '800',
@@ -206,6 +210,7 @@ const config = {
           10: 'hsl(var(--silver-10))',
           15: 'hsl(var(--silver-15))',
           20: 'hsl(var(--silver-20))',
+          30: 'hsl(var(--silver-30))',
         },
       },
       fontFamily: {

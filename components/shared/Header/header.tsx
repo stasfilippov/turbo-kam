@@ -11,7 +11,7 @@ export const Header = () => {
   return (
     <header
       className={
-        'fixed left-1/2 top-0 z-10 w-full max-w-[1600px] translate-x-[-50%] rounded-b-[20px] bg-primary-black/40 px-[15px] py-[10px] text-primary-white flexBetween medium-16'
+        'fixed left-1/2 top-0 z-50 w-full max-w-[1600px] translate-x-[-50%] rounded-b-[20px] bg-primary-black/40 px-[15px] py-[10px] text-primary-white flexBetween medium-16'
       }
     >
       <Link className={'flexCenter'} href={'/'}>

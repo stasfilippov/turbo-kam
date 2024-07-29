@@ -1,8 +1,10 @@
-export default function Favors() {
+import { FavorsList } from '@/components/shared/Favors/favorsList'
+
+export default function Page() {
   return (
     <section className={'mt-28 rounded-t-5xl bg-silver-10 p-10'}>
       <div className={'max-container pb-10 pt-10'}>
-        <div className={'flex justify-end'}>
+        <div className={'mb-10 flex justify-end'}>
           <div className={'w-full max-w-[600px]'}>
             <h1 className={'leading-[3.75rem] bold-70'}>Наши услуги</h1>
             <div className={'text-primary-black/60 bold-64'}>
@@ -10,6 +12,7 @@ export default function Favors() {
             </div>
           </div>
         </div>
+        <FavorsList />
       </div>
     </section>
   )
