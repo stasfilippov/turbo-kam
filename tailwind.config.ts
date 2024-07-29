@@ -206,6 +206,7 @@ const config = {
           10: 'hsl(var(--silver-10))',
           15: 'hsl(var(--silver-15))',
           20: 'hsl(var(--silver-20))',
+          30: 'hsl(var(--silver-30))',
         },
       },
       fontFamily: {
