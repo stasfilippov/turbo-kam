@@ -9,7 +9,7 @@ export const Advantages = () => {
   return (
     <section className={'-mt-[35px]'}>
       <div className={'max-container pb-5 pt-[60px]'}>
-        <h2 className={'mb-12 text-end medium-48'}>
+        <h2 className={'mb-12 text-end bold-48'}>
           <span className={'text-primary-pink'}>Преимущества</span> работы с нами
         </h2>
 

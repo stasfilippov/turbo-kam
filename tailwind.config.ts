@@ -57,6 +57,10 @@ const config = {
             fontSize: '24px',
             fontWeight: '800',
           },
+          '.bold-48': {
+            fontSize: '48px',
+            fontWeight: '800',
+          },
           '.bold-64': {
             fontSize: '64px',
             fontWeight: '800',
