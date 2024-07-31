@@ -29,10 +29,10 @@ export const CardFavor = ({ item }: Props) => {
       </div>
       <div
         className={
-          'mb-3 text-silver-30 transition-all duration-300 ease-in-out flexBetween group-hover:text-primary-black'
+          'text-silver-30 transition-all duration-300 ease-in-out flexBetween group-hover:text-primary-black'
         }
       >
-        <h3 className={'text-primary-black bold-20'}>{label}</h3>
+        <h3 className={'mt-3 text-primary-black bold-20'}>{label}</h3>
         <ArrowUpRight size={70} strokeWidth={0.75} />
       </div>
       <Separator
