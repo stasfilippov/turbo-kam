@@ -1,5 +1,4 @@
-import { FavorType } from '@/app/favors/page'
-import example from '@/public/tkr6.jpg'
+import { FavorType } from '@/components/shared/Favors/favorsList'
 import { ArrowRight, ArrowUpRight } from 'lucide-react'
 import Image from 'next/image'
 
@@ -10,12 +9,16 @@ type Props = {
 }
 
 export const CardFavor = ({ item }: Props) => {
-  const { label } = item
+  const { label, srcImage } = item
 
   return (
     <div className={'group relative hover:cursor-pointer'}>
       <div className={'relative mb-5 h-[300px] overflow-hidden rounded-5xl'}>
-        <Image alt={label} className={'absolute left-0 top-0 object-cover'} src={example} />
+        <Image
+          alt={label}
+          className={'absolute left-0 top-0 h-full w-full object-cover'}
+          src={srcImage}
+        />
         <div
           className={
             'absolute right-[23px] top-[23px] h-[46px] w-[46px] rounded-full text-primary-black/0 transition-all duration-300 ease-in-out flexCenter group-hover:bg-primary-white group-hover:text-primary-black/100 group-hover:shadow-md'
