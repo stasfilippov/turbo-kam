@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { ReactNode } from 'react'
 
 import { Footer, Header } from '@/components/shared'
+import { YMapLoader } from '@/components/shared/Map/YMapLoader'
 import { cn } from '@/lib/utils'
 import { Manrope } from 'next/font/google'
 
@@ -30,6 +31,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <YMapLoader />
       </body>
     </html>
   )
